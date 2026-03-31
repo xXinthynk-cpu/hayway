@@ -46,7 +46,7 @@ body {
 /* HERO */
 .hero {
     height: 100vh;
-    background: url('images/hero.jpg') center/cover;
+    background: url('images/haywaylogo.png') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
