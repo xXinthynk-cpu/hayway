@@ -1,8 +1,8 @@
 // ===== CONFIG (TINGGAL UBAH DI SINI SAJA) =====
 const config = {
-    hero: "images/hero.jpg",
-    tshirt: "images/tshirt.jpg",
-    pants: "images/pants.jpg",
+    hero: "images/haywaylogo.png",
+    tshirt: "images/mockup10.png",
+    pants: "images/mockup4.png",
     galleryTotal: 10 // jumlah foto
 };
 
