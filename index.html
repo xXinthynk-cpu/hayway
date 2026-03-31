@@ -3,139 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LIMITLESS APPAREL</title>
+<title>LIMITLESS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #111;
+    font-family: 'Inter', sans-serif;
+    background: #0D0D0D;
+    color: #F5F5F5;
+}
+
+/* NAV */
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(13,13,13,0.7);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    letter-spacing: 3px;
+    font-weight: 600;
 }
 
 /* HERO */
 .hero {
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1520975916090-3105956dac38') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1491553895911-0055eca6402d') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 60px;
-    letter-spacing: 5px;
-}
-
-.hero p {
-    font-size: 18px;
+    font-size: 80px;
+    letter-spacing: 10px;
 }
 
 /* SECTION */
 .section {
-    padding: 60px 10%;
+    padding: 120px 8%;
 }
 
 .title {
-    font-size: 28px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
-/* GRID PRODUK */
+.desc {
+    color: #aaa;
+    max-width: 500px;
+}
+
+/* GRID */
 .grid {
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
 }
 
 .grid img {
     width: 100%;
-    border-radius: 10px;
+    height: 350px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.grid img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
 }
 
 /* FOOTER */
 .footer {
-    background: #111;
-    color: white;
     text-align: center;
-    padding: 30px;
+    padding: 60px;
+    border-top: 1px solid #222;
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- HERO -->
+<div class="nav">
+    <div class="logo">LIMITLESS</div>
+</div>
+
 <section class="hero">
-    <div>
-        <h1>LIMITLESS</h1>
-        <p>Streetwear for the fearless generation</p>
-    </div>
+    <h1>LIMITLESS</h1>
 </section>
 
-<!-- ABOUT -->
 <section class="section">
-    <div class="title">About the Brand</div>
-    <p>
-        LIMITLESS adalah brand streetwear yang terinspirasi dari perjalanan, perjuangan,
-        dan kebebasan berekspresi. Setiap desain dibuat untuk merepresentasikan generasi
-        yang tidak memiliki batas dalam mengejar mimpi.
+    <div class="title">NEW GENERATION</div>
+    <p class="desc">
+        A brand built from silence, ambition, and the journey of becoming something greater.
     </p>
-</section>
 
-<!-- PRODUK KAOS -->
-<section class="section">
-    <div class="title">T-Shirts Collection</div>
     <div class="grid">
-        <img src="https://source.unsplash.com/400x400/?tshirt,black">
-        <img src="https://source.unsplash.com/401x400/?streetwear">
-        <img src="https://source.unsplash.com/402x400/?fashion,black">
-        <img src="https://source.unsplash.com/403x400/?urban,style">
-        <img src="https://source.unsplash.com/404x400/?model,streetwear">
+        <img src="https://source.unsplash.com/400x500/?streetwear">
+        <img src="https://source.unsplash.com/401x500/?fashion">
+        <img src="https://source.unsplash.com/402x500/?urban">
+        <img src="https://source.unsplash.com/403x500/?model">
+        <img src="https://source.unsplash.com/404x500/?outfit">
+        <img src="https://source.unsplash.com/405x500/?pants">
+        <img src="https://source.unsplash.com/406x500/?black">
+        <img src="https://source.unsplash.com/407x500/?minimal">
+        <img src="https://source.unsplash.com/408x500/?street">
+        <img src="https://source.unsplash.com/409x500/?clothing">
     </div>
-    <p>
-        Kaos LIMITLESS dibuat dari bahan premium cotton dengan potongan oversized.
-        Desain grafis mencerminkan identitas kuat, minimalis, dan berkarakter.
-    </p>
 </section>
 
-<!-- PRODUK CELANA -->
-<section class="section">
-    <div class="title">Pants Collection</div>
-    <div class="grid">
-        <img src="https://source.unsplash.com/405x400/?pants,black">
-        <img src="https://source.unsplash.com/406x400/?trousers">
-        <img src="https://source.unsplash.com/407x400/?streetwear,pants">
-        <img src="https://source.unsplash.com/408x400/?fashion,pants">
-        <img src="https://source.unsplash.com/409x400/?urban,outfit">
-    </div>
-    <p>
-        Celana LIMITLESS dirancang untuk kenyamanan maksimal dengan tampilan modern.
-        Cocok untuk aktivitas sehari-hari maupun gaya urban lifestyle.
-    </p>
-</section>
-
-<!-- IDE BRAND -->
-<section class="section">
-    <div class="title">Future Vision</div>
-    <p>
-        Ke depannya, LIMITLESS akan mengembangkan:
-    </p>
-    <ul>
-        <li>Kolaborasi dengan kreator & seniman lokal</li>
-        <li>Limited edition drops (exclusive collection)</li>
-        <li>Campaign storytelling (journey & struggle concept)</li>
-        <li>Ekspansi ke hoodie, jacket, dan accessories</li>
-        <li>Konten visual cinematic untuk branding global</li>
-    </ul>
-</section>
-
-<!-- FOOTER -->
 <div class="footer">
-    <p>© 2026 LIMITLESS APPAREL</p>
+    <p>© LIMITLESS</p>
 </div>
 
 </body>
