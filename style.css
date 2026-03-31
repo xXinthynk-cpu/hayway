@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0D0D0D;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* LOADER */
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader h1 {
+    letter-spacing: 10px;
+}
+
+/* NAV */
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+}
+
+.menu a {
+    margin-left: 20px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('images/hero.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+
+/* SECTION */
+.section {
+    padding: 100px 8%;
+}
+
+/* TEXT */
+.title {
+    font-size: 36px;
+}
+
+.desc {
+    color: #aaa;
+}
+
+/* GRID */
+.grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+
+.grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.grid img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* SPLIT */
+.split {
+    display: flex;
+    gap: 40px;
+}
+
+.split img {
+    width: 50%;
+}
+
+.split .text {
+    width: 50%;
+}
+
+/* SOCIAL */
+.social {
+    text-align: center;
+    margin: 80px;
+}
+
+.social a {
+    margin: 10px;
+    padding: 12px 20px;
+    border: 1px solid #444;
+    text-decoration: none;
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #222;
+}
+
+/* ANIMATION */
+.fade {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .grid {grid-template-columns: repeat(2,1fr);}
+    .split {flex-direction: column;}
+    .split img, .split .text {width: 100%;}
+    .hamburger {display: block;}
+    .menu {display:none;}
+    .menu.active {display:block;}
+}
